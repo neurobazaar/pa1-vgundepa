@@ -43,7 +43,7 @@ remote-computer$ unzip Dataset1.zip
 ```
 
 ### C++ solution
-#### How to build/compile
+#### How to build/compile  
 
 To build the C++ solution use the following commands:
 ```
@@ -96,3 +96,39 @@ To run the Java sort_words program (after you build the project) use the followi
 ```
 java -cp target/app-java-1.0-SNAPSHOT.jar csc435.app.SortWords <input directory> <output directory>
 ```
+
+# Java Text Processing Programs
+
+This repository contains a set of Java programs designed for processing text data within `.txt` files. The programs are intended to be used in sequence to clean text data, count word occurrences, and sort words by their frequencies.
+
+## Programs Overview
+
+1. **CleanDataset.java**
+   - **Purpose:** Cleans text data by removing non-alphanumeric characters and normalizing whitespace.
+   - **Usage:** `java CleanDataset <inputDir> <outputDir>`
+     - `inputDir`: Directory with `.txt` files to clean.
+     - `outputDir`: Directory to save cleaned files, preserving the input directory structure.
+
+2. **CountWords.java**
+   - **Purpose:** Counts occurrences of each word in text files.
+   - **Usage:** `java CountWords <inputDir> <outputDir>`
+     - `inputDir`: Directory with `.txt` files for word counting.
+     - `outputDir`: Directory to save files with word counts, preserving the input directory structure.
+
+3. **SortWords.java**
+   - **Purpose:** Sorts words by frequency in descending order based on word counts in text files.
+   - **Usage:** `java SortWords <inputDir> <outputDir>`
+     - `inputDir`: Directory with `.txt` files containing word counts.
+     - `outputDir`: Directory to save files with sorted word counts, preserving the input directory structure.
+
+## Usage Instructions
+
+- Ensure Java is installed and properly set up on your system.
+- Use the programs in the order listed to process your text data effectively.
+- Specify the correct paths for `inputDir` and `outputDir` when running the programs.
+
+## Requirements
+
+- Java Runtime Environment (JRE) or Java Development Kit (JDK).
+
+For more detailed information on each program, please refer to the comments within the source code.
